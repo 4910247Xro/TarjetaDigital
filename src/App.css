@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url(./assets/d1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  max-width: 450px;
+  font-size: 1.4em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
+  border: 2px solid #ffb1e3; 
+  margin: 50px auto 20px; 
+  padding: 20px; 
+}
+* {
+  margin: 10px;
+  padding: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.botones a {
+  background-color: rgb(249, 160, 232);
+  color: #f1f1f1;
+  border-radius: 20px;
+  padding: 4px 50px;
+  font-size: 1.2em;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  display: inline-block;
+}
+
+.botones a:hover {
+  background-color:rgb(255, 101, 183);
+  color: #f1f1f1;
+}
+
+.social-icons a {
+  margin: 0 4px; 
+  color: #f1f1f1;
+  font-size: 2.0em;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Ajusta el tamaño del círculo según sea necesario */
+  height: 40px; 
+  background-color: #ffb1e3; 
+  border-radius: 50%; 
+ 
+}
+
+.social-icons a:hover {
+  color: #ff72fa;
+}
+
+.footer{
+  background-color: #ffb1e3;
+  width: 108%;
+  display: flex;
+  margin-bottom: -4%;
+  border-radius: 20px;
+  padding: 1px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
